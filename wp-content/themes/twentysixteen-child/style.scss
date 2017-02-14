@@ -1,0 +1,72 @@
+/*
+Theme Name: Noah's Theme
+Theme URI:
+Description: A theme for Noah's blog and archived writings
+Author: Jake Mullen
+Author URI: https://github.com/Jakelmullen
+Template: twentysixteen
+Version: 0.1.0
+*/
+
+@import url(../twentysixteen/style.css);
+
+//var
+
+// =================================
+// overwriting general layout styles
+// =================================
+
+//this takes out the default spacing above the content of site
+@media screen and (min-width: 0em){
+  body:not(.custom-background-image).admin-bar:before {
+    top: 0;
+  }
+}
+
+.site {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+// =================================
+// Header styles
+// =================================
+
+.site-header {
+  background-color: #454545;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  .site-header-main {
+    .site-branding {
+      .site-title a {
+        color: #F4F7F5;
+      }
+      .site-description {
+        color: #E07A5F;
+      }
+    }
+  }
+}
+
+
+
+.site-content {
+  padding: 0;
+
+  &:before {
+    content: '';
+    display: block;
+    background-image: url('assets/images/header-shape.png');
+    background-position: bottom;
+    width: 100%;
+    height: 168px;
+  }
+}
+
+.home-card {
+  p {
+    float: left;
+  }
+}
