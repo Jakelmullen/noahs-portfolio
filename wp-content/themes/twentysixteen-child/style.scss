@@ -120,6 +120,12 @@ $accent-color: #E07A5F;
 }
 
 .home-card {
+  margin-top: -20px;
+  img {
+    display: block;
+    border-radius: 8px;
+    margin: 0 auto;
+  }
   p {
     float: left;
   }
