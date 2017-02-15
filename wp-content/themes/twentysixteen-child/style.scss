@@ -11,6 +11,10 @@ Version: 0.1.0
 @import url(../twentysixteen/style.css);
 
 //var
+$white: #F4F7F5;
+$off-white: #dbdbdb;
+$black: #1a1a1a;
+$accent-color: #E07A5F;
 
 // =================================
 // overwriting general layout styles
@@ -24,7 +28,7 @@ Version: 0.1.0
 }
 
 .site {
-  max-width: 1100px;
+  max-width: 980px;
   margin: 0 auto;
 }
 
@@ -41,10 +45,15 @@ Version: 0.1.0
   .site-header-main {
     .site-branding {
       .site-title a {
-        color: #F4F7F5;
+        color: $white;
       }
       .site-description {
-        color: #E07A5F;
+        color: $accent-color;
+      }
+    }
+    .site-header-menu {
+      a {
+
       }
     }
   }

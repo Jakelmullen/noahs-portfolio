@@ -12,7 +12,7 @@ Version: 0.1.0
   body:not(.custom-background-image).admin-bar:before {
     top: 0; } }
 .site {
-  max-width: 1100px;
+  max-width: 980px;
   margin: 0 auto; }
 
 .site-header {
