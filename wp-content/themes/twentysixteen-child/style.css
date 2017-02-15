@@ -23,6 +23,17 @@ Version: 0.1.0
     color: #F4F7F5; }
   .site-header .site-header-main .site-branding .site-description {
     color: #E07A5F; }
+  .site-header .site-header-main .site-header-menu a {
+    color: #c4c4c3; }
+    .site-header .site-header-main .site-header-menu a:hover {
+      color: #F4F7F5; }
+    .site-header .site-header-main .site-header-menu a:active {
+      color: #F4F7F5; }
+  .site-header .site-header-main .site-header-menu .current-menu-item > a {
+    color: #F4F7F5; }
+
+.main-navigation .current-menu-item > a {
+  color: #F4F7F5; }
 
 .site-content {
   padding: 0; }

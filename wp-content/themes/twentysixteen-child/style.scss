@@ -12,7 +12,7 @@ Version: 0.1.0
 
 //var
 $white: #F4F7F5;
-$off-white: #dbdbdb;
+$off-white: #c4c4c3;
 $black: #1a1a1a;
 $accent-color: #E07A5F;
 
@@ -53,13 +53,28 @@ $accent-color: #E07A5F;
     }
     .site-header-menu {
       a {
+        color: $off-white;
 
+        &:hover {
+          color: $white;
+        }
+
+        &:active {
+          color: $white;
+        }
+      }
+      .current-menu-item > a {
+        color: $white;
       }
     }
   }
 }
 
-
+.main-navigation {
+  .current-menu-item > a {
+    color: $white;
+  }
+}
 
 .site-content {
   padding: 0;
