@@ -62,6 +62,10 @@ $accent-color: #E07A5F;
         &:active {
           color: $white;
         }
+
+        &:focus {
+          color: $white;
+        }
       }
       .current-menu-item > a {
         color: $white;
@@ -69,10 +73,36 @@ $accent-color: #E07A5F;
     }
   }
 }
-
+ //active state for menu items
 .main-navigation {
   .current-menu-item > a {
     color: $white;
+  }
+}
+
+.menu-toggle {
+  color: $off-white;
+  &:hover {
+    color: $white;
+    border-color: $accent-color;
+  }
+
+  &:focus {
+    color: $white;
+    border-color: $accent-color;
+  }
+  &.toggled-on {
+    color: $white;
+    background-color: $accent-color;
+
+    &:hover {
+      color: $white;
+      background-color: $accent-color;
+    }
+    &:focus {
+      color: $white;
+      background-color: $accent-color;
+    }
   }
 }
 

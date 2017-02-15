@@ -29,11 +29,31 @@ Version: 0.1.0
       color: #F4F7F5; }
     .site-header .site-header-main .site-header-menu a:active {
       color: #F4F7F5; }
+    .site-header .site-header-main .site-header-menu a:focus {
+      color: #F4F7F5; }
   .site-header .site-header-main .site-header-menu .current-menu-item > a {
     color: #F4F7F5; }
 
 .main-navigation .current-menu-item > a {
   color: #F4F7F5; }
+
+.menu-toggle {
+  color: #c4c4c3; }
+  .menu-toggle:hover {
+    color: #F4F7F5;
+    border-color: #E07A5F; }
+  .menu-toggle:focus {
+    color: #F4F7F5;
+    border-color: #E07A5F; }
+  .menu-toggle.toggled-on {
+    color: #F4F7F5;
+    background-color: #E07A5F; }
+    .menu-toggle.toggled-on:hover {
+      color: #F4F7F5;
+      background-color: #E07A5F; }
+    .menu-toggle.toggled-on:focus {
+      color: #F4F7F5;
+      background-color: #E07A5F; }
 
 .site-content {
   padding: 0; }
