@@ -9,12 +9,16 @@ Version: 0.1.0
 */
 
 @import url(../twentysixteen/style.css);
+@import url('https://fonts.googleapis.com/css?family=Average|Fjalla+One');
 
 //var
 $white: #F4F7F5;
 $off-white: #c4c4c3;
 $black: #1a1a1a;
 $accent-color: #E07A5F;
+
+$head-font: 'Fjalla One', sans-serif;
+$content-font: 'Average', serif;
 
 // =================================
 // overwriting general layout styles
@@ -45,9 +49,11 @@ $accent-color: #E07A5F;
   .site-header-main {
     .site-branding {
       .site-title a {
+        font-family: $head-font;
         color: $white;
       }
       .site-description {
+        font-family: $content-font;
         color: $accent-color;
       }
     }
@@ -126,7 +132,29 @@ $accent-color: #E07A5F;
     border-radius: 8px;
     margin: 0 auto;
   }
-  p {
-    float: left;
+
+  @media (min-width: 720px) {
+    img {
+      float: left;
+      margin: 0;
+    }
+
+    .home-card-description {
+      display: inline;
+      max-width: calc(100% - 150px);
+      float: left;
+      padding-left: 20px;
+    }
+  }
+}
+
+// footer
+
+.site-footer {
+  a {
+    &:hover {
+      color: $accent-color;
+      text-decoration: none;
+    }
   }
 }

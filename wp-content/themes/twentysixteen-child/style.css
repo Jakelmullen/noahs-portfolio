@@ -8,6 +8,7 @@ Template: twentysixteen
 Version: 0.1.0
 */
 @import url(../twentysixteen/style.css);
+@import url("https://fonts.googleapis.com/css?family=Average|Fjalla+One");
 @media screen and (min-width: 0em) {
   body:not(.custom-background-image).admin-bar:before {
     top: 0; } }
@@ -20,8 +21,10 @@ Version: 0.1.0
   padding-top: 0;
   padding-bottom: 0; }
   .site-header .site-header-main .site-branding .site-title a {
+    font-family: "Fjalla One", sans-serif;
     color: #F4F7F5; }
   .site-header .site-header-main .site-branding .site-description {
+    font-family: "Average", serif;
     color: #E07A5F; }
   .site-header .site-header-main .site-header-menu a {
     color: #c4c4c3; }
@@ -71,7 +74,18 @@ Version: 0.1.0
     display: block;
     border-radius: 8px;
     margin: 0 auto; }
-  .home-card p {
-    float: left; }
+  @media (min-width: 720px) {
+    .home-card img {
+      float: left;
+      margin: 0; }
+    .home-card .home-card-description {
+      display: inline;
+      max-width: calc(100% - 150px);
+      float: left;
+      padding-left: 20px; } }
+
+.site-footer a:hover {
+  color: #E07A5F;
+  text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
