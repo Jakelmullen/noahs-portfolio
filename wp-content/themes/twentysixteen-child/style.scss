@@ -36,6 +36,25 @@ $content-font: 'Average', serif;
   margin: 0 auto;
 }
 
+h1, h2, h3, h4, h5, h6, a {
+  font-family: $head-font;
+}
+
+p {
+  font-family: $content-font;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  li {
+    padding-bottom: 5px;
+    a {
+      color: $accent-color;
+    }
+  }
+}
+
 
 // =================================
 // Header styles
@@ -59,6 +78,7 @@ $content-font: 'Average', serif;
     }
     .site-header-menu {
       a {
+        font-family: $content-font;
         color: $off-white;
 
         &:hover {
@@ -144,7 +164,23 @@ $content-font: 'Average', serif;
       max-width: calc(100% - 150px);
       float: left;
       padding-left: 20px;
+      font-family: $content-font;
+
+      h3 {
+        font-family: $head-font;
+      }
     }
+  }
+}
+
+//widget area
+
+.widget-area  {
+  .widget {
+    border-top: 1px solid $black;
+  }
+  .widget-title {
+    font-family: $head-font;
   }
 }
 
@@ -156,5 +192,10 @@ $content-font: 'Average', serif;
       color: $accent-color;
       text-decoration: none;
     }
+  }
+
+  .social-navigation a:hover:before,
+  .social-navigation a:focus:before {
+  	color: $accent-color;
   }
 }

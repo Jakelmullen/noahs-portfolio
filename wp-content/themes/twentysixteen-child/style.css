@@ -16,6 +16,20 @@ Version: 0.1.0
   max-width: 980px;
   margin: 0 auto; }
 
+h1, h2, h3, h4, h5, h6, a {
+  font-family: "Fjalla One", sans-serif; }
+
+p {
+  font-family: "Average", serif; }
+
+ul {
+  list-style: none;
+  margin: 0; }
+  ul li {
+    padding-bottom: 5px; }
+    ul li a {
+      color: #E07A5F; }
+
 .site-header {
   background-color: #454545;
   padding-top: 0;
@@ -27,6 +41,7 @@ Version: 0.1.0
     font-family: "Average", serif;
     color: #E07A5F; }
   .site-header .site-header-main .site-header-menu a {
+    font-family: "Average", serif;
     color: #c4c4c3; }
     .site-header .site-header-main .site-header-menu a:hover {
       color: #F4F7F5; }
@@ -82,10 +97,21 @@ Version: 0.1.0
       display: inline;
       max-width: calc(100% - 150px);
       float: left;
-      padding-left: 20px; } }
+      padding-left: 20px;
+      font-family: "Average", serif; }
+      .home-card .home-card-description h3 {
+        font-family: "Fjalla One", sans-serif; } }
+
+.widget-area .widget {
+  border-top: 1px solid #1a1a1a; }
+.widget-area .widget-title {
+  font-family: "Fjalla One", sans-serif; }
 
 .site-footer a:hover {
   color: #E07A5F;
   text-decoration: none; }
+.site-footer .social-navigation a:hover:before,
+.site-footer .social-navigation a:focus:before {
+  color: #E07A5F; }
 
 /*# sourceMappingURL=style.css.map */
