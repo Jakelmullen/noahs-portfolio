@@ -12,15 +12,26 @@ Version: 0.1.0
 @media screen and (min-width: 0em) {
   body:not(.custom-background-image).admin-bar:before {
     top: 0; } }
+body {
+  background-color: #454545; }
+
 .site {
-  max-width: 980px;
-  margin: 0 auto; }
+  box-shadow: 6px 0 12px -4px #1a1a1a, -6px 0 8px -4px #1a1a1a;
+  margin: 0; }
+  .site .site-content {
+    max-width: 980px;
+    margin: 0 auto; }
+    .site .site-content .site-main {
+      margin: 80px 0 30px 0; }
 
 h1, h2, h3, h4, h5, h6, a {
   font-family: "Fjalla One", sans-serif; }
 
 p {
   font-family: "Average", serif; }
+
+a {
+  cursor: pointer; }
 
 ul {
   list-style: none;
@@ -34,6 +45,18 @@ ul {
   background-color: #454545;
   padding-top: 0;
   padding-bottom: 0; }
+  .site-header:after {
+    content: '';
+    position: absolute;
+    background-image: url("assets/images/header-shape-desktop.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70px;
+    left: 0;
+    padding: 0;
+    margin-top: -2px; }
   .site-header .site-header-main .site-branding .site-title a {
     font-family: "Fjalla One", sans-serif;
     color: #F4F7F5; }
@@ -73,34 +96,22 @@ ul {
       color: #F4F7F5;
       background-color: #E07A5F; }
 
-.site-content {
-  padding: 0; }
-  .site-content:before {
-    content: '';
-    display: block;
-    background-image: url("assets/images/header-shape.png");
-    background-position: bottom;
-    width: 100%;
-    height: 168px; }
-
-.home-card {
-  margin-top: -20px; }
+.home-card img {
+  display: block;
+  border-radius: 8px;
+  margin: 0 auto; }
+@media (min-width: 720px) {
   .home-card img {
-    display: block;
-    border-radius: 8px;
-    margin: 0 auto; }
-  @media (min-width: 720px) {
-    .home-card img {
-      float: left;
-      margin: 0; }
-    .home-card .home-card-description {
-      display: inline;
-      max-width: calc(100% - 150px);
-      float: left;
-      padding-left: 20px;
-      font-family: "Average", serif; }
-      .home-card .home-card-description h3 {
-        font-family: "Fjalla One", sans-serif; } }
+    float: left;
+    margin: 0; }
+  .home-card .home-card-description {
+    display: inline;
+    max-width: calc(100% - 150px);
+    float: left;
+    padding-left: 20px;
+    font-family: "Average", serif; }
+    .home-card .home-card-description h3 {
+      font-family: "Fjalla One", sans-serif; } }
 
 .widget-area .widget {
   border-top: 1px solid #1a1a1a; }
