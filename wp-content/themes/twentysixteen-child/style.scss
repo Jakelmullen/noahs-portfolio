@@ -132,11 +132,11 @@ ul {
   }
 }
  //active state for menu items
-.main-navigation {
-  .current-menu-item > a {
-    color: $white;
-  }
-}
+// .main-navigation {
+//   .current-menu-item > a {
+//     color: $white;
+//   }
+// }
 
 .menu-toggle {
   color: $off-white;
@@ -212,8 +212,48 @@ ul {
     }
   }
 
+  .main-navigation {
+    .current-menu-item > a {
+      color: $accent-color!important;
+    }
+  }
+
   .social-navigation a:hover:before,
   .social-navigation a:focus:before {
   	color: $accent-color;
+  }
+}
+
+// =================================
+// Posts
+// =================================
+
+@media screen and (min-width: 61.5625em) {
+  body.no-sidebar:not(.search-results) article:not(.type-page) .entry-content {
+    float: left;
+    margin-right: -15%;
+    margin-left: 15%;
+  }
+
+  body.no-sidebar:not(.search-results) article:not(.type-page) .entry-footer {
+    margin-right: -100%;
+    margin-left: 15%;
+    width: 15%;
+  }
+}
+
+//styles for link posts
+.format-link {
+  .entry-content {
+    p {
+      a {
+        display: block;
+        width: 100px;
+        padding: 10px 20px;
+        background-color: orange;
+        text-align: center;
+        border-radius: 4px;
+      }
+    }
   }
 }
